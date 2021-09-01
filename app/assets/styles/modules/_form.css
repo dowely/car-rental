@@ -1,0 +1,66 @@
+.form {
+
+  &__section {
+      margin-bottom: 2rem;
+  }
+
+  &__section--second {
+    margin-bottom: 1.25rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.5rem 0 1rem;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    margin-bottom: .875rem;
+  }
+
+  &__text-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem .75rem;
+    color: $darkBrown;
+
+    &::placeholder {
+      color: $darkBrown;
+    }
+  }
+
+  &__date-input {
+    padding: .5rem .75rem;
+    width: 45%;
+    margin-top: 1rem;
+
+    &::-webkit-calendar-picker-indicator {
+      margin-left: 0;
+      transform: scale(1.2);
+    }
+  }
+
+  &__time-input {
+    padding: .5rem .75rem;
+    width: 30%;
+    margin-top: 1rem;
+    float: right;
+
+    &::-webkit-calendar-picker-indicator {
+      transform: scale(1.4);
+    }
+  }
+
+  &__checkbox {
+    transform-origin: top left;
+    transform: scale(1.5);
+    margin-bottom: 1.25rem;
+  }
+
+  &__label {
+    padding: 1rem;
+    vertical-align: sub;
+    color: $mainBlue;
+  }
+}

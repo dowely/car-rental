@@ -7,10 +7,56 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="hero">
-    <h1>Testing</h1>
-    <p>Lorem ipsum dolor sit amet!!!!</p>
-  </div>
+  
+  <header id="rentCar">
+    <div class="hero">
+      <div class="hero__nav-bar">
+
+      </div>
+
+      <picture>
+        <source srcset="assets/images/hero--large-low-dpi-o.png 1920w, assets/images/hero--large-hi-dpi-o.png 3840w" media="(min-width: 1380px)">
+        <source srcset="assets/images/hero--medium-low-dpi-o.png 1380w, assets/images/hero--medium-hi-dpi-o.png 2760w" media="(min-width: 980px)">
+        <source srcset="assets/images/hero--small-low-dpi-o.png 980w, assets/images/hero--small-hi-dpi-o.png 1960w" media="(min-width: 640px)">
+        <img srcset="assets/images/hero--smallest-low-dpi-o.png 640w, assets/images/hero--smallest-hi-dpi-o.png 1280w" alt="White BMW Car" class="hero__image">
+      </picture>
+
+      <div class="hero__form-container">
+        <form class="form">
+          <h2 class="form__title">Start your trip</h2>
+
+          <div class="form__section">
+            <h3 class="form__subtitle">Pick-up location</h3>
+
+            <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
+
+            <input type="date" class="form__date-input" value="2021-09-01">
+
+            <input type="time" class="form__time-input" value="10:00">
+          </div>
+
+          <div class="form__section form__section--second">
+            <h3 class="form__subtitle">Drop-off location</h3>
+
+            <input type="checkbox" class="form__checkbox" id="sameDropOff">
+            <label class="form__label" for="sameDropOff">Same as pick-up location</label>
+
+            <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
+
+            <input type="date" class="form__date-input" value="2021-09-01">
+
+            <input type="time" class="form__time-input" value="10:00">
+          </div>
+
+          <input class="btn btn--fw" type="submit" value="Choose a car">
+        </form>
+      </div>
+    </div>
+
+    <div class="info-bar">
+
+    </div>
+  </header>
   
   <script src="bundled.js"></script>
 </body>
