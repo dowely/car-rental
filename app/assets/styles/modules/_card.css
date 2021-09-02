@@ -1,0 +1,71 @@
+.card {
+
+  &__text-content {
+    padding: .75rem 2.25rem 2rem;
+    text-align: center;
+  }
+
+  &__tier {
+    font-size: 1.5rem;
+    color: $lightBrown;
+    margin: 1rem 0 1.25rem;
+
+    @mixin atSmallest {
+      font-size: 1.75rem;
+      margin: 1.25rem 0 1.5rem;
+    }
+  }
+
+  &__model {
+    font-size: 1.75rem;
+    margin: 0 0 1.25rem;
+
+    @mixin atSmallest {
+      font-size: 2.25rem;
+      margin: 0 0 1.5rem;
+    }
+  }
+
+  &__features {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    li {
+      margin: .375rem;
+      padding: .25rem;
+      background-color: $mainLight;
+      font-size: .75rem;
+      color: $lightBrown;
+
+      @mixin atSmallest {
+        margin: .5rem;
+        font-size: .875rem;
+        padding: .375rem;
+      }
+    }
+  }
+
+  &__deal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+
+    span {
+      font-size: 1.25rem;
+    }
+
+    @mixin atSmallest {
+      font-size: 2.5rem;
+    }
+  }
+
+}

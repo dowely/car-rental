@@ -11,7 +11,7 @@
   &__title {
     font-size: 2rem;
     font-weight: 400;
-    margin: 1.5rem 0 1rem;
+    margin: 1.5rem 0 1.75rem;
   }
 
   &__subtitle {
@@ -30,25 +30,43 @@
     }
   }
 
+  &__datetime {
+    display: flex;
+    flex-direction: column;
+
+    @mixin atSmallest {
+      flex-direction: row;
+    }
+  }
+
   &__date-input {
     padding: .5rem .75rem;
-    width: 45%;
     margin-top: 1rem;
 
     &::-webkit-calendar-picker-indicator {
       margin-left: 0;
       transform: scale(1.2);
     }
+
+    @mixin atSmallest {
+      width: 7rem;
+      flex: 2 1 auto;
+    }
   }
 
   &__time-input {
     padding: .5rem .75rem;
-    width: 30%;
     margin-top: 1rem;
-    float: right;
 
     &::-webkit-calendar-picker-indicator {
+      margin-left: 0;
       transform: scale(1.4);
+    }
+
+    @mixin atSmallest {
+      width: 4rem;
+      flex: 1 0 auto;
+      margin-left: 1rem;
     }
   }
 
@@ -62,5 +80,10 @@
     padding: 1rem;
     vertical-align: sub;
     color: $mainBlue;
+    font-size: .875rem;
+
+    @mixin atSmallest {
+      font-size: 1rem;
+    }
   }
 }

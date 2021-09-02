@@ -1,0 +1,20 @@
+.deals {
+
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 1.5rem 0 .75rem;
+    border-right: 3px solid $lightBrown;
+    width: 15rem;
+  }
+
+  &__slogan {
+    line-height: 1.5;
+    margin-top: 0;
+  }
+
+  &__content {
+    border-bottom: 1.5rem solid $mainLight;
+  }
+}

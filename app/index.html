@@ -30,9 +30,11 @@
 
             <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
 
-            <input type="date" class="form__date-input" value="2021-09-01">
+            <div class="form__datetime">
+              <input type="date" class="form__date-input" value="2021-09-01">
 
-            <input type="time" class="form__time-input" value="10:00">
+              <input type="time" class="form__time-input" value="10:00">
+            </div>
           </div>
 
           <div class="form__section form__section--second">
@@ -43,9 +45,10 @@
 
             <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
 
-            <input type="date" class="form__date-input" value="2021-09-01">
-
-            <input type="time" class="form__time-input" value="10:00">
+            <div class="form__datetime">
+              <input type="date" class="form__date-input" value="2021-09-01">
+              <input type="time" class="form__time-input" value="10:00">
+            </div>
           </div>
 
           <input class="btn btn--fw" type="submit" value="Choose a car">
@@ -54,9 +57,163 @@
     </div>
 
     <div class="info-bar">
-
+      <div class="wrapper">
+        <p class="info-bar__call">Call our reservation office</p>
+        <p class="info-bar__phone">+48 601 555 444</p>
+        <p class="info-bar__hours">Mon - Fri 9:00 - 17:00</p>
+      </div>
     </div>
   </header>
+
+  <section id="bestCars">
+      <div class="deals">
+        <div class="wrapper">
+          <h2 class="deals__heading">Our special deals</h2>
+          <p class="deals__slogan">Contrary to popular belief, Lorem Ipsum is not simply random text. Various versions have evolved over the years. </p>
+        </div>
+
+        <div class="deals__content">
+          <div class="card">
+            <picture>
+              <source srcset="assets/images/blue--large-low-dpi-o.png 685w, assets/images/blue--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
+              <img srcset="assets/images/blue--small-low-dpi-o.png 400w, assets/images/blue--small-hi-dpi-o.png 800w" alt="Blue Mercedes" class="card__image">
+            </picture>
+
+            <div class="card__text-content">
+              <p class="card__tier">Class Premium</p>
+              <h3 class="card__model">Ford Kuga Pro</h3>
+              <ul class="card__features">
+                <li>Hatchback</li>
+                <li>2020</li>
+                <li>Automatic</li>
+                <li>A/C</li>
+                <li>min age 18</li>
+              </ul>
+              <div class="card__deal">
+                <h3 class="card__price">$85/<span>day</span></h3>
+                <button class="btn btn--card">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deals__content">
+          <div class="card">
+            <picture>
+              <source srcset="assets/images/red--large-low-dpi-o.png 685w, assets/images/red--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
+              <img srcset="assets/images/red--small-low-dpi-o.png 400w, assets/images/red--small-hi-dpi-o.png 800w" alt="Blue Mercedes" class="card__image">
+            </picture>
+
+            <div class="card__text-content">
+              <p class="card__tier">Class Economy</p>
+              <h3 class="card__model">Range Rover</h3>
+              <ul class="card__features">
+                <li>Sedan</li>
+                <li>2021</li>
+                <li>Manual</li>
+                <li>A/C</li>
+                <li>min age 18</li>
+              </ul>
+              <div class="card__deal">
+                <h3 class="card__price">$72/<span>day</span></h3>
+                <button class="btn btn--card">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="ourServices">
+    <div class="services">
+      <div class="wrapper">
+        <h2 class="services__heading">Services</h2>
+        <h3 class="services__slogan">W<span>ha</span>t sets as appart</h3>
+        <div class="services__content">
+          <div class="row">
+            <div>
+              <div class="advantages">
+                <div class="advantages__shape"></div>
+                <div class="advantages__title">Best prices</div>
+                <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+              </div>
+            </div>
+            <div>
+              <div class="advantages">
+                <div class="advantages__shape"></div>
+                <div class="advantages__title">Car range</div>
+                <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+              </div>
+            </div>
+            <div>
+              <div class="advantages">
+                <div class="advantages__shape"></div>
+                <div class="advantages__title">Assistance</div>
+                <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+              </div>
+            </div>
+            <div>
+              <div class="advantages">
+                <div class="advantages__shape"></div>
+                <div class="advantages__title">We go global</div>
+                <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="end">
+    <div class="footer">
+      <div class="footer__overlay"></div>
+      <div class="footer__content">
+        <div class="wrapper">
+          <div class="row">
+            <div>
+              <h2 class="footer__logo">Rent<span>Car</span></h2>
+              <p class="footer__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ligula id eros porta tempus. Proin a quam ligula. Curabitur.</p>
+            </div>
+            <div>
+              <h3 class="footer__heading">Information</h3>
+              <ul class="footer__links">
+                <li>Fleet</li>
+                <li>Pricing</li>
+                <li>Locations</li>
+                <li>Terms</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__heading">Quick links</h3>
+              <ul class="footer__links">
+                <li>FAQ</li>
+                <li>Payment options</li>
+                <li>How it works</li>
+                <li>Contact form</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__heading">Our Headquarter</h3>
+              <p class="footer__address">Fake St. Radom<br>26-604, Poland</p>
+              <p class="footer__email">info@domain.com</p>
+              <p class="footer__phone">+48 601 555 444</p>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <div class="footer__newsletter">
+                <input type="email" class="footer__input" value="Subscribe to our newsletter">
+                <span class="footer__plane"></span>
+              </div>
+            </div>
+            <div>
+              <p class="footer__copy">Copyright &copy; 2021 All rights reserved | Designed and developed by <span>Marcin Ogar</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   
   <script src="bundled.js"></script>
 </body>

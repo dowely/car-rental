@@ -1,0 +1,17 @@
+.info-bar {
+  margin-top: 36rem;
+  background-color: $lightBrown;
+  color: $mainLight;
+  border-top: 6px solid $darkBrown;
+  border-bottom: 6px solid $darkBrown;
+  text-align: center;
+  font-size: 1.125rem;
+
+  @mixin atSmallest {
+    margin-top: 30rem;
+  }
+
+  &__call {
+    font-size: 1.25rem;
+  }
+}
