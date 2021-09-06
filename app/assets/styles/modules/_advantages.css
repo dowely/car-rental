@@ -9,6 +9,14 @@
     border: 4px solid $mainBlue;
     margin: 0 auto;
     border-radius: 50% 50% 50% 0;
+    display: flex;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
+    color: $mainRed;
   }
 
   &__title {

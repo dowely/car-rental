@@ -1,4 +1,5 @@
 const path = require('path')
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 const postCSSPlugins = [
   require('postcss-import'),
@@ -33,7 +34,18 @@ module.exports = {
             plugins: postCSSPlugins
           }
         }}]
+      },
+      {
+        test: /\.svg$/i,
+        use: [
+          {
+            loader: 'svg-sprite-loader'
+          }
+        ]
       }
     ]
-  }
+  },
+  plugins: [
+    new SpriteLoaderPlugin()
+  ]
 }
