@@ -11,7 +11,46 @@
     margin-top: 30rem;
   }
 
+  @mixin atSmall {
+    margin-top: 28rem;
+  }
+
+  @mixin atLarge {
+    margin-top: 0;
+    text-align: end;
+  }
+
   &__call {
     font-size: 1.25rem;
+
+    @mixin atSmall {
+      font-size: 1.625rem;
+      margin: 1.5rem 0;
+    }
   }
+
+  &__phone {
+    @mixin atMedium {
+      display: inline-block;
+      margin: 0 1rem 1.25rem;
+    }
+  }
+
+  &__hours {
+    @mixin atMedium {
+      display: inline-block;
+      margin: 0 1rem 1.25rem;
+    }
+
+    @mixin atLarge {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: -25%;
+  }
+
 }

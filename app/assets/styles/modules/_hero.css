@@ -17,5 +17,17 @@
     background-color: #fff;
     box-shadow: 0 2px 15px 1px rgba(0, 0, 0, .4);
     border-radius: 10px;
+
+    @mixin atMedium {
+      width: 65%;
+    }
+
+    @mixin atLarge {
+      width: 21rem;
+      top: 25%;
+      left: 10%;
+      transform: none;
+      padding: 0 2rem 2rem;
+    }
   }
 }

@@ -12,11 +12,20 @@
     font-size: 2rem;
     font-weight: 400;
     margin: 1.5rem 0 1.75rem;
+
+    @mixin atLarge {
+      font-size: 1.75rem;
+      margin: 1.25rem 0 1.25rem;
+    }
   }
 
   &__subtitle {
     font-weight: 500;
     margin-bottom: .875rem;
+
+    @mixin atLarge {
+      font-size: 1.1rem;
+    }
   }
 
   &__text-input {
@@ -24,6 +33,10 @@
     box-sizing: border-box;
     padding: .5rem .75rem;
     color: $darkBrown;
+
+    @mixin atLarge {
+      font-size: .875rem;
+    }
 
     &::placeholder {
       color: $darkBrown;
@@ -36,6 +49,10 @@
 
     @mixin atSmallest {
       flex-direction: row;
+    }
+
+    @mixin atLarge {
+      font-size: .875rem;
     }
   }
 
