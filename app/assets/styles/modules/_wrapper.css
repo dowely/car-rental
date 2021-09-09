@@ -1,5 +1,8 @@
 .wrapper {
-  padding: 0 1.5rem;
+  padding: 0 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 
   @mixin atMedium {
     padding: 0 3rem;
@@ -10,6 +13,9 @@
   }
 
   &--extra-padding {
-    padding: 0 5rem;
+
+    @mixin atSmall {
+      padding: 0 5rem;
+    }
   }
 }

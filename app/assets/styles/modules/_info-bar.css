@@ -20,6 +20,14 @@
     text-align: end;
   }
 
+  @mixin atXLarge {
+
+    & > .wrapper {
+      display: flex;
+    }
+    
+  }
+
   &__call {
     font-size: 1.25rem;
 
@@ -27,12 +35,24 @@
       font-size: 1.625rem;
       margin: 1.5rem 0;
     }
+
+    @mixin atXLarge {
+      display: inline-block;
+      font-size: 1.875rem;
+      font-weight: 300;
+    }
   }
 
   &__phone {
     @mixin atMedium {
       display: inline-block;
       margin: 0 1rem 1.25rem;
+    }
+
+    @mixin atXLarge {
+      font-size: 1.875rem;
+      margin: 1.5rem auto;
+      font-weight: 300;
     }
   }
 
@@ -45,12 +65,24 @@
     @mixin atLarge {
       margin-right: 0;
     }
+
+    @mixin atXLarge {
+      font-size: 1.875rem;
+      margin: 1.5rem 0;
+      font-weight: 300;
+    }
   }
 
   &__icon {
     width: 1.5rem;
     height: 1.5rem;
     vertical-align: -25%;
+
+    @mixin atXLarge {
+      width: 1.75rem;
+      height: 1.75rem;
+      vertical-align: -15%;
+    }
   }
 
 }

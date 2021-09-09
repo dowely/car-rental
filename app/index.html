@@ -76,7 +76,7 @@
         <div class="deals__content">
           <div class="card">
             <picture>
-              <source srcset="assets/images/blue--large-low-dpi-o.png 685w, assets/images/blue--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
+              <source sizes="(min-width: 992px) 685px" srcset="assets/images/blue--large-low-dpi-o.png 685w, assets/images/blue--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
               <img srcset="assets/images/blue--small-low-dpi-o.png 400w, assets/images/blue--small-hi-dpi-o.png 800w" alt="Blue Mercedes" class="card__image">
             </picture>
 
@@ -103,10 +103,10 @@
           </div>
         </div>
         <div class="deals__content">
-          <div class="card">
+          <div class="card card--img-right card--reduced-m-large">
             <picture>
-              <source srcset="assets/images/red--large-low-dpi-o.png 685w, assets/images/red--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
-              <img srcset="assets/images/red--small-low-dpi-o.png 400w, assets/images/red--small-hi-dpi-o.png 800w" alt="Blue Mercedes" class="card__image">
+              <source sizes="(min-width: 992px) 685px" srcset="assets/images/red--large-low-dpi-o.png 685w, assets/images/red--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
+              <img srcset="assets/images/red--small-low-dpi-o.png 400w, assets/images/red--small-hi-dpi-o.png 800w" alt="Red sports car" class="card__image">
             </picture>
 
             <div class="card__text-content">
@@ -125,7 +125,7 @@
                 <li>min age 18</li>
               </ul>
               <div class="card__deal">
-                <h3 class="card__price">$72/<span>day</span></h3>
+                <h3 class="card__price card__price--right">$72/<span>day</span></h3>
                 <button class="btn btn--card">Book now</button>
               </div>
             </div>
@@ -140,7 +140,7 @@
         <h2 class="services__heading">Services</h2>
         <h3 class="services__slogan">W<span>ha</span>t sets as appart</h3>
         <div class="services__content">
-          <div class="row row--2-col-md">
+          <div class="row row--2-col-md row--4-col-xl row--gutters">
             <div>
               <div class="advantages">
                 <div class="advantages__shape">
@@ -196,12 +196,12 @@
       <div class="footer__overlay"></div>
       <div class="footer__content">
         <div class="wrapper">
-          <div class="row row--2-col-sm">
+          <div class="row row--2-col-sm row--4-col-xl">
             <div class="row__sm-11">
               <h2 class="footer__logo">Rent<span>Car</span></h2>
               <p class="footer__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel ligula id eros porta tempus. Proin a quam ligula. Curabitur.</p>
             </div>
-            <div>
+            <div class="footer__section">
               <h3 class="footer__heading">Information</h3>
               <ul class="footer__links">
                 <li>Fleet</li>
@@ -241,7 +241,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row row--2-col-lg">
             <div>
               <div class="footer__newsletter">
                 <input type="email" class="footer__input" value="Subscribe to our newsletter">
@@ -252,7 +252,7 @@
                 </span>
               </div>
             </div>
-            <div>
+            <div class="row__lg-8">
               <p class="footer__copy">Copyright &copy; 2021 All rights reserved | Designed and developed by <span>Marcin Ogar</span></p>
             </div>
           </div>

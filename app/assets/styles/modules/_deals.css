@@ -28,6 +28,12 @@
       width: 24rem;
       margin-top: 2.25rem;
     }
+
+    @mixin atXLarge {
+      font-size: 3.75rem;
+      width: 36rem;
+      margin-top: 3rem;
+    }
   }
 
   &__slogan {
@@ -46,6 +52,11 @@
     @mixin atLarge {
       font-size: 1.5rem;
       margin: 1.75rem 0 2.75rem;
+    }
+
+    @mixin atXLarge {
+      font-size: 1.875rem;
+      margin: 2.5rem 0 4rem;
     }
   }
 

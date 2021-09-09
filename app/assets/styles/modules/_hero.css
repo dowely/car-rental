@@ -29,5 +29,11 @@
       transform: none;
       padding: 0 2rem 2rem;
     }
+
+    @mixin atXLarge {
+      top: 55%;
+      left: 50%;
+      transform: translate(-550px, -50%)
+    }
   }
 }
