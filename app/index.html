@@ -8,63 +8,81 @@
 </head>
 <body>
   
-  <header id="rentCar">
-    <div class="hero">
-      <div class="hero__nav-bar">
-
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <svg class="site-header__icon">
+          <use xlink:href="#header__car"></use>
+        </svg>
+        <h1 class="site-header__company-name">Rent<span>Car</span></h1>
       </div>
 
-      <picture>
-        <source srcset="assets/images/hero--large-low-dpi-o.png 1920w, assets/images/hero--large-hi-dpi-o.png 3840w" media="(min-width: 1380px)">
-        <source srcset="assets/images/hero--medium-low-dpi-o.png 1380w, assets/images/hero--medium-hi-dpi-o.png 2760w" media="(min-width: 980px)">
-        <source srcset="assets/images/hero--small-low-dpi-o.png 980w, assets/images/hero--small-hi-dpi-o.png 1960w" media="(min-width: 640px)">
-        <img srcset="assets/images/hero--smallest-low-dpi-o.png 640w, assets/images/hero--smallest-hi-dpi-o.png 1280w" alt="White BMW Car" class="hero__image">
-      </picture>
+      <div class="site-header__hamburger"></div>
 
-      <div class="hero__form-container">
-        <form class="form">
-          <h2 class="form__title">Start your trip</h2>
-          <div class="form__section">
-            <h3 class="form__subtitle">Pick-up location</h3>
-            <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
-            <div class="form__datetime">
-              <input type="date" class="form__date-input" value="2021-09-01">
-              <input type="time" class="form__time-input" value="10:00">
-            </div>
-          </div>
-          <div class="form__section form__section--second">
-            <h3 class="form__subtitle">Drop-off location</h3>
-            <input type="checkbox" class="form__checkbox" id="sameDropOff">
-            <label class="form__label" for="sameDropOff">Same as pick-up location</label>
-            <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
-            <div class="form__datetime">
-              <input type="date" class="form__date-input" value="2021-09-01">
-              <input type="time" class="form__time-input" value="10:00">
-            </div>
-          </div>
-          <input class="btn btn--fw" type="submit" value="Choose a car">
-        </form>
-      </div>
-    </div>
-
-    <div class="info-bar">
-      <div class="wrapper">
-        <p class="info-bar__call">Call our reservation office</p>
-        <p class="info-bar__phone">
-          <svg class="info-bar__icon">
-            <use xlink:href="#info-bar__smartphone"></use>
-          </svg>
-          +48 601 555 444
-        </p>
-        <p class="info-bar__hours">
-          <svg class="info-bar__icon">
-            <use xlink:href="#info-bar__time"></use>
-          </svg>
-          Mon - Fri 9:00 - 17:00
-        </p>
-      </div>
+      <nav class="site-header__menu">
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Fleet</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+
+  <div class="hero">
+
+    <picture>
+      <source srcset="assets/images/hero--large-low-dpi.png 1920w, assets/images/hero--large-hi-dpi.png 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium-low-dpi.png 1380w, assets/images/hero--medium-hi-dpi.png 2760w" media="(min-width: 980px)">
+      <source srcset="assets/images/hero--small-low-dpi.png 980w, assets/images/hero--small-hi-dpi.png 1960w" media="(min-width: 640px)">
+      <img srcset="assets/images/hero--smallest-low-dpi.png 640w, assets/images/hero--smallest-hi-dpi.png 1280w" alt="White BMW Car" class="hero__image">
+    </picture>
+
+    <div class="hero__form-container">
+      <form class="form">
+        <h2 class="form__title">Start your trip</h2>
+        <div class="form__section">
+          <h3 class="form__subtitle">Pick-up location</h3>
+          <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
+          <div class="form__datetime">
+            <input type="date" class="form__date-input" value="2021-09-01">
+            <input type="time" class="form__time-input" value="10:00">
+          </div>
+        </div>
+        <div class="form__section form__section--second">
+          <h3 class="form__subtitle">Drop-off location</h3>
+          <input type="checkbox" class="form__checkbox" id="sameDropOff">
+          <label class="form__label" for="sameDropOff">Same as pick-up location</label>
+          <input type="text" class="form__text-input" autocomplete="off" placeholder="City, airport, hotel, etc">
+          <div class="form__datetime">
+            <input type="date" class="form__date-input" value="2021-09-01">
+            <input type="time" class="form__time-input" value="10:00">
+          </div>
+        </div>
+        <input class="btn btn--fw" type="submit" value="Choose a car">
+      </form>
+    </div>
+  </div>
+
+  <div class="info-bar">
+    <div class="wrapper">
+      <p class="info-bar__call">Call our reservation office</p>
+      <p class="info-bar__phone">
+        <svg class="info-bar__icon">
+          <use xlink:href="#info-bar__smartphone"></use>
+        </svg>
+        +48 601 555 444
+      </p>
+      <p class="info-bar__hours">
+        <svg class="info-bar__icon">
+          <use xlink:href="#info-bar__time"></use>
+        </svg>
+        Mon - Fri 9:00 - 17:00
+      </p>
+    </div>
+  </div>
 
   <section id="bestCars">
       <div class="deals">
@@ -76,8 +94,8 @@
         <div class="deals__content">
           <div class="card">
             <picture>
-              <source sizes="(min-width: 992px) 685px" srcset="assets/images/blue--large-low-dpi-o.png 685w, assets/images/blue--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
-              <img srcset="assets/images/blue--small-low-dpi-o.png 400w, assets/images/blue--small-hi-dpi-o.png 800w" alt="Blue Mercedes" class="card__image">
+              <source sizes="(min-width: 992px) 685px" srcset="assets/images/blue--large-low-dpi.png 685w, assets/images/blue--large-hi-dpi.png 1370w" media="(min-width: 400px)"> 
+              <img srcset="assets/images/blue--small-low-dpi.png 400w, assets/images/blue--small-hi-dpi.png 800w" alt="Blue Mercedes" class="card__image">
             </picture>
 
             <div class="card__text-content">
@@ -105,8 +123,8 @@
         <div class="deals__content">
           <div class="card card--img-right card--reduced-m-large">
             <picture>
-              <source sizes="(min-width: 992px) 685px" srcset="assets/images/red--large-low-dpi-o.png 685w, assets/images/red--large-hi-dpi-o.png 1370w" media="(min-width: 400px)"> 
-              <img srcset="assets/images/red--small-low-dpi-o.png 400w, assets/images/red--small-hi-dpi-o.png 800w" alt="Red sports car" class="card__image">
+              <source sizes="(min-width: 992px) 685px" srcset="assets/images/red--large-low-dpi.png 685w, assets/images/red--large-hi-dpi.png 1370w" media="(min-width: 400px)"> 
+              <img srcset="assets/images/red--small-low-dpi.png 400w, assets/images/red--small-hi-dpi.png 800w" alt="Red sports car" class="card__image">
             </picture>
 
             <div class="card__text-content">
