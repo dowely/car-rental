@@ -24,7 +24,12 @@
       width: 21rem;
       position: relative;
       text-align: left;
+      display: inline-block;
       background-color: transparent;
+    }
+
+    @mixin atLarge {
+      width: 18rem;
     }
   }
 
@@ -37,8 +42,8 @@
     @mixin atSmall {
       position: absolute;
       margin-left: 1em;
-      width: 80px;
-      height: 80px;
+      width: 56px;
+      height: 56px;
     }
   }
 
@@ -53,7 +58,7 @@
     }
 
     @mixin atSmall {
-      padding-left: 8rem;
+      padding-left: 6rem;
     }
   }
 
@@ -64,9 +69,48 @@
     top: 20px;
     right: 20px;
     background-color: $darkBrown;
+
+    @mixin atLarge {
+      display: none;
+    }
   }
 
   &__menu {
     display: none;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 2em 1em 0;
+
+      @mixin atXLarge {
+       padding: 1.875em 1.25em 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $darkBrown;
+      font-size: 1.25rem;
+
+      @mixin atXLarge {
+        font-size: 1.5rem;
+      }
+
+      &.active {
+        color: $mainRed;
+      }
+    }
+
+    @mixin atLarge {
+      display: block;
+      float: right;
+
+    }
   }
 }
